@@ -207,6 +207,8 @@ public class editKriteria extends javax.swing.JDialog {
                 if (konfirmasi == JOptionPane.YES_OPTION) {
                     st.executeUpdate(sql);
                     SPK.loadKriteria();
+//                    SPK.loadKriteria();
+
                     JOptionPane.showMessageDialog(this, "Data Berhasil Diubah");
                     c.close();
                     dispose();
