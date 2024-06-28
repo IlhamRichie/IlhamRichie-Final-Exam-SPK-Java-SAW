@@ -8,6 +8,7 @@ import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+//import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,6 +23,9 @@ public class editKriteria extends javax.swing.JDialog {
     public editKriteria(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+//        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
     }
 
     /**

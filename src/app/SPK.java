@@ -44,7 +44,6 @@ public class SPK extends javax.swing.JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         
         btnNorm.setEnabled(false);
-
     }
 
     /**
@@ -110,9 +109,9 @@ public class SPK extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
@@ -136,12 +135,15 @@ public class SPK extends javax.swing.JFrame {
         jTabbedPane1.setBackground(new java.awt.Color(54, 81, 126));
         jTabbedPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         jTabbedPane1.setForeground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
 
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jPanel6.setBackground(new java.awt.Color(54, 81, 126));
         jPanel6.setPreferredSize(new java.awt.Dimension(873, 50));
 
+        jButton1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(54, 81, 126));
         jButton1.setText("Edit Kriteria");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,7 +158,7 @@ public class SPK extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jButton1)
-                .addContainerGap(851, Short.MAX_VALUE))
+                .addContainerGap(828, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,6 +192,8 @@ public class SPK extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(54, 81, 126));
         jPanel7.setPreferredSize(new java.awt.Dimension(873, 50));
 
+        jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(54, 81, 126));
         jButton3.setText("Tambah ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,6 +201,8 @@ public class SPK extends javax.swing.JFrame {
             }
         });
 
+        editSuplemen.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        editSuplemen.setForeground(new java.awt.Color(54, 81, 126));
         editSuplemen.setText("Edit");
         editSuplemen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,6 +210,8 @@ public class SPK extends javax.swing.JFrame {
             }
         });
 
+        btnHapusAlt.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnHapusAlt.setForeground(new java.awt.Color(54, 81, 126));
         btnHapusAlt.setText("Hapus");
         btnHapusAlt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +241,7 @@ public class SPK extends javax.swing.JFrame {
                 .addComponent(editSuplemen, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnHapusAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 433, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 421, Short.MAX_VALUE)
                 .addComponent(txtCari, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
         );
@@ -273,6 +281,8 @@ public class SPK extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(54, 81, 126));
         jPanel8.setPreferredSize(new java.awt.Dimension(873, 50));
 
+        perhitungan.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        perhitungan.setForeground(new java.awt.Color(54, 81, 126));
         perhitungan.setText("Lakukan Perhitungan");
         perhitungan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,6 +290,8 @@ public class SPK extends javax.swing.JFrame {
             }
         });
 
+        btnNorm.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnNorm.setForeground(new java.awt.Color(54, 81, 126));
         btnNorm.setText("Lihat Normalisasi");
         btnNorm.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
@@ -303,17 +315,17 @@ public class SPK extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(perhitungan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 553, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btnNorm, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
+                .addContainerGap(544, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(perhitungan, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                    .addComponent(btnNorm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnNorm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(perhitungan, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -492,7 +504,7 @@ public class SPK extends javax.swing.JFrame {
     private javax.swing.JTextField txtCari;
     // End of variables declaration//GEN-END:variables
 
-    public void loadKriteria() {
+    public static void loadKriteria() {
         Object[][] data = null;
         Object[] header = {"ID", "KRITERIA", "BOBOT", "LABEL", "KODE"};
         DefaultTableModel model = new DefaultTableModel(data, header);
@@ -520,7 +532,7 @@ public class SPK extends javax.swing.JFrame {
         }
     }
 
-    public void loadAlternatif() {
+    public static void loadAlternatif() {
         Object[][] data = null;
         Object[] header = {"ID", "NAMA", "JARAK", "KEPADATAN", "HARGA", "AKSESIBILITAS", "LUAS", "DESKRIPSI"};
         DefaultTableModel model = new DefaultTableModel(data, header); 

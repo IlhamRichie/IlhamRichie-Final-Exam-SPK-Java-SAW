@@ -52,9 +52,9 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="49" max="32767" attributes="0"/>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -116,6 +116,9 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="14" style="1"/>
+        </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -157,7 +160,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="851" max="32767" attributes="0"/>
+                          <EmptySpace pref="828" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -174,6 +177,12 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="jButton1">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Edit Kriteria"/>
                   </Properties>
                   <Events>
@@ -249,7 +258,7 @@
                           <Component id="editSuplemen" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnHapusAlt" min="-2" pref="103" max="-2" attributes="0"/>
-                          <EmptySpace pref="433" max="32767" attributes="0"/>
+                          <EmptySpace pref="421" max="32767" attributes="0"/>
                           <Component id="txtCari" min="-2" pref="180" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
@@ -273,6 +282,12 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="jButton3">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Tambah "/>
                   </Properties>
                   <Events>
@@ -281,6 +296,12 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="editSuplemen">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Edit"/>
                   </Properties>
                   <Events>
@@ -289,6 +310,12 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnHapusAlt">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Hapus"/>
                   </Properties>
                   <Events>
@@ -366,9 +393,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Component id="perhitungan" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="553" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnNorm" min="-2" pref="202" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace pref="544" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -377,8 +404,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="perhitungan" pref="38" max="32767" attributes="0"/>
                               <Component id="btnNorm" max="32767" attributes="0"/>
+                              <Component id="perhitungan" pref="38" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -388,6 +415,12 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="perhitungan">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Lakukan Perhitungan"/>
                   </Properties>
                   <Events>
@@ -396,6 +429,12 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btnNorm">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="7e" green="51" red="36" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Lihat Normalisasi"/>
                   </Properties>
                   <Events>
