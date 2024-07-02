@@ -58,6 +58,10 @@ public class SPK extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        perhitungan = new javax.swing.JButton();
+        btnNorm = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
+        nilaiQ = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -73,13 +77,11 @@ public class SPK extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblAlternatif = new javax.swing.JTable();
         jPanel5 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        perhitungan = new javax.swing.JButton();
-        btnNorm = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         hasilPembobotan = new javax.swing.JTable();
-        jPanel9 = new javax.swing.JPanel();
-        nilaiQ = new javax.swing.JLabel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        hasilNorm = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -104,7 +106,7 @@ public class SPK extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,15 +121,76 @@ public class SPK extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(54, 81, 126));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
+        perhitungan.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        perhitungan.setForeground(new java.awt.Color(54, 81, 126));
+        perhitungan.setText("Lakukan Perhitungan");
+        perhitungan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                perhitunganActionPerformed(evt);
+            }
+        });
+
+        btnNorm.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnNorm.setForeground(new java.awt.Color(54, 81, 126));
+        btnNorm.setText("Lihat Normalisasi");
+        btnNorm.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                btnNormAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        btnNorm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNormActionPerformed(evt);
+            }
+        });
+
+        jPanel9.setPreferredSize(new java.awt.Dimension(873, 50));
+
+        nilaiQ.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        nilaiQ.setForeground(new java.awt.Color(54, 81, 126));
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(nilaiQ, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(nilaiQ, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 964, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(perhitungan)
+                .addGap(35, 35, 35)
+                .addComponent(btnNorm, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(534, Short.MAX_VALUE))
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 970, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnNorm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(perhitungan, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE))
+                .addGap(12, 12, 12))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_END);
@@ -158,7 +221,7 @@ public class SPK extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jButton1)
-                .addContainerGap(828, Short.MAX_VALUE))
+                .addContainerGap(834, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,7 +304,7 @@ public class SPK extends javax.swing.JFrame {
                 .addComponent(editSuplemen, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnHapusAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 421, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 427, Short.MAX_VALUE)
                 .addComponent(txtCari, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
         );
@@ -278,59 +341,6 @@ public class SPK extends javax.swing.JFrame {
 
         jPanel5.setLayout(new java.awt.BorderLayout());
 
-        jPanel8.setBackground(new java.awt.Color(54, 81, 126));
-        jPanel8.setPreferredSize(new java.awt.Dimension(873, 50));
-
-        perhitungan.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        perhitungan.setForeground(new java.awt.Color(54, 81, 126));
-        perhitungan.setText("Lakukan Perhitungan");
-        perhitungan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                perhitunganActionPerformed(evt);
-            }
-        });
-
-        btnNorm.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        btnNorm.setForeground(new java.awt.Color(54, 81, 126));
-        btnNorm.setText("Lihat Normalisasi");
-        btnNorm.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                btnNormAncestorAdded(evt);
-            }
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-            }
-            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
-            }
-        });
-        btnNorm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNormActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(perhitungan)
-                .addGap(18, 18, 18)
-                .addComponent(btnNorm, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(544, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnNorm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(perhitungan, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-
-        jPanel5.add(jPanel8, java.awt.BorderLayout.PAGE_START);
-
         hasilPembobotan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -346,31 +356,24 @@ public class SPK extends javax.swing.JFrame {
 
         jPanel5.add(jScrollPane3, java.awt.BorderLayout.CENTER);
 
-        jPanel9.setPreferredSize(new java.awt.Dimension(873, 50));
+        jTabbedPane1.addTab("Perankingan", jPanel5);
 
-        nilaiQ.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        nilaiQ.setForeground(new java.awt.Color(54, 81, 126));
+        hasilNorm.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane4.setViewportView(hasilNorm);
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(nilaiQ, javax.swing.GroupLayout.DEFAULT_SIZE, 936, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(nilaiQ, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jTabbedPane2.addTab("", jScrollPane4);
 
-        jPanel5.add(jPanel9, java.awt.BorderLayout.PAGE_END);
-
-        jTabbedPane1.addTab("Pembobotan", jPanel5);
+        jTabbedPane1.addTab("Normalisasi", jTabbedPane2);
 
         getContentPane().add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
@@ -480,6 +483,7 @@ public class SPK extends javax.swing.JFrame {
     private javax.swing.JButton btnHapusAlt;
     public static javax.swing.JButton btnNorm;
     private javax.swing.JButton editSuplemen;
+    private javax.swing.JTable hasilNorm;
     private javax.swing.JTable hasilPembobotan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
@@ -491,12 +495,13 @@ public class SPK extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JLabel nilaiQ;
     private javax.swing.JButton perhitungan;
     public static javax.swing.JTable tblAlternatif;

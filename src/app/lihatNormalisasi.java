@@ -35,17 +35,17 @@ public class lihatNormalisasi extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tabel Normalisasi");
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(753, 75));
+        jPanel1.setPreferredSize(new java.awt.Dimension(500, 150));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 753, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 150, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.PAGE_START);
@@ -56,7 +56,7 @@ public class lihatNormalisasi extends javax.swing.JDialog {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 753, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -81,6 +81,7 @@ public class lihatNormalisasi extends javax.swing.JDialog {
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

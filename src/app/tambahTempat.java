@@ -59,7 +59,7 @@ public class tambahTempat extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Tambah Suplemen Fitness");
+        setTitle("Tambah  Tempat");
         setAlwaysOnTop(true);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(650, 200));
@@ -94,7 +94,7 @@ public class tambahTempat extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(jLabel11)
                     .addComponent(jLabel12))
-                .addContainerGap(297, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +165,7 @@ public class tambahTempat extends javax.swing.JFrame {
                     .addComponent(txtIsi, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtGula, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addContainerGap(156, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -198,12 +198,13 @@ public class tambahTempat extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
                     .addComponent(txtInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtIsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIsiActionPerformed

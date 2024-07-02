@@ -59,6 +59,7 @@ public class updateTempat extends javax.swing.JDialog {
         txteInfo = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Edit Tempat");
 
         btnSimpan.setText("Simpan");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
@@ -224,6 +225,7 @@ public class updateTempat extends javax.swing.JDialog {
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
