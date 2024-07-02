@@ -539,7 +539,7 @@ public class SPK extends javax.swing.JFrame {
 
     public static void loadAlternatif() {
         Object[][] data = null;
-        Object[] header = {"ID", "NAMA", "JARAK", "KEPADATAN", "HARGA", "AKSESIBILITAS", "LUAS", "DESKRIPSI"};
+        Object[] header = {"ID", "NAMA", "JARAK", "KEPADATAN", "HARGA", "LUAS", "AKSESIBILITAS", "DESKRIPSI"};
         DefaultTableModel model = new DefaultTableModel(data, header); 
         tblAlternatif.setModel(model);
 
