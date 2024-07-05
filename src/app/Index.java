@@ -114,9 +114,13 @@ public class Index extends javax.swing.JFrame {
             }
             
         } else {
-            SPK spk = new SPK();
-            spk.setVisible(true);
-            this.setVisible(false);
+              SPK spk = new SPK();
+//            spk.setVisible(true);
+//            this.setVisible(false);
+//  
+            login login = new login();
+            login.setVisible(true);
+            this.dispose(); // Tutup frame login saat ini
         }
     }//GEN-LAST:event_buttonActionPerformed
 
